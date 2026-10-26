@@ -35,7 +35,7 @@
   },
 
   "dependencies": {
-    "Newtonsoft.Json": "[9.0.1,10.0)",
-    "YamlDotNet.Signed": "3.8.0"
+    "Newtonsoft.Json": "[13.0.4]",
+    "YamlDotNet": "[6.0.0]"
   }
 }

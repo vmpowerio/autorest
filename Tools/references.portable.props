@@ -4,8 +4,9 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Portable-Debug</Configuration>
   </PropertyGroup>
   <ItemGroup Condition=" '$(LibraryFxTarget)' == 'portable' ">
+    <!-- Candidate asset only: Profile111 compile/runtime qualification is still required before release. -->
     <Reference Include="Newtonsoft.Json">
-      <HintPath>$(CommonNugetPackageFolder)\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+aspnetcore50\Newtonsoft.Json.dll</HintPath>
+      <HintPath>$(CommonNugetPackageFolder)\Newtonsoft.Json.13.0.4\lib\netstandard1.0\Newtonsoft.Json.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>

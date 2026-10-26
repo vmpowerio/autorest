@@ -90,8 +90,9 @@ namespace AutoRest.Swagger
                 {
                     using (var s = new StringWriter(CultureInfo.CurrentCulture))
                     {
-                        var d = new Deserializer();
-                        d.NodeDeserializers.Insert( 0,new YamlBoolDeserializer() );
+                        var d = new DeserializerBuilder()
+                            .WithNodeDeserializer(new YamlBoolDeserializer())
+                            .Build();
                         new JsonSerializer().Serialize(s, d.Deserialize(y));
                         return s.ToString();
                     }

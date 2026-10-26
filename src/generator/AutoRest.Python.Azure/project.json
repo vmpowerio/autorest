@@ -21,7 +21,7 @@
   },
 
   "dependencies": {
-    "Newtonsoft.Json": "[9.0.1,10.0)",
+    "Newtonsoft.Json": "[13.0.4]",
 
     "AutoRest.Extensions.Azure": {
       "target": "project"

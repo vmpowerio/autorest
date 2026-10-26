@@ -10,7 +10,7 @@ namespace AutoRest.Swagger
 {
     public class YamlBoolDeserializer : INodeDeserializer
     {
-        public bool Deserialize(EventReader reader, Type expectedType, Func<EventReader, Type, object> nestedObjectDeserializer, out object value)
+        public bool Deserialize(IParser reader, Type expectedType, Func<IParser, Type, object> nestedObjectDeserializer, out object value)
         {
             if (reader == null)
             {

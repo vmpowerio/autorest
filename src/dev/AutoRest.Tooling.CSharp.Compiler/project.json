@@ -22,7 +22,7 @@
 
   "dependencies": {
     "Microsoft.CodeAnalysis.CSharp": "2.0.0-beta1",
-    "Newtonsoft.Json": "[9.0.1,10.0)",
+    "Newtonsoft.Json": "[13.0.4]",
     "System.Threading.Tasks": "4.0.0"
   }
 }
